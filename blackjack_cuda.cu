@@ -12,6 +12,7 @@
         if (err != cudaSuccess) {                                                      \
             fprintf(stderr, "CUDA Error in %s at line %d: %s (%d)\n",                  \
                     __FILE__, __LINE__, cudaGetErrorString(err), err);                 \
+            /* cudaDeviceReset(); // Optional: Consider resetting device on critical error */ \
             exit(EXIT_FAILURE);                                                        \
         }                                                                              \
     } while (0)
