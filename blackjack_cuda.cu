@@ -19,7 +19,7 @@
 
 // Game constants
 constexpr int ACE = 11;
-constexpr int TEN = 10; // For Jack, Queen, King
+constexpr int TEN = 10;
 constexpr int DEALER_STAND_LIMIT = 17;
 constexpr int BLACKJACK = 21;
 
